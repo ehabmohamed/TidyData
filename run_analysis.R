@@ -1,5 +1,5 @@
 library(dplyr)
-dataSetPath <- "."
+dataSetPath <- "./UCI HAR Dataset"
 trainingFolder <- "train"
 testFolder <- "test"
 
