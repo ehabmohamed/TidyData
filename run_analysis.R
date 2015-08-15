@@ -54,9 +54,6 @@ names(dataSet)[2] <- "subject"
 
 summaryDataSet <- dataSet %>% group_by(activity, subject) %>% summarise_each(funs(mean))
 
-summaryDataSet <- data.frame(summaryDataSet)
-
 summaryDataSet
 
-##write.table(x = summaryDataSet, file = "dataset.txt", row.name=FALSE)
 
