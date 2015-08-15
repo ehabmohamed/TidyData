@@ -1,6 +1,5 @@
 library(dplyr)
-setwd("F:\\DataScience\\Git\\repositories\\TidyData")
-dataSetPath <- "./UCI HAR Dataset"
+dataSetPath <- "."
 trainingFolder <- "train"
 testFolder <- "test"
 
@@ -52,13 +51,12 @@ dataSet <- cbind(labels$V2, subjects, dataSet)
 names(dataSet)[1] <- "activity"
 names(dataSet)[2] <- "subject"
 
-dataSet[1:35,1:5]
 
 summaryDataSet <- dataSet %>% group_by(activity, subject) %>% summarise_each(funs(mean))
 
 summaryDataSet <- data.frame(summaryDataSet)
 
-summaryDataSet[1:35,1:5]
+summaryDataSet
 
-write.table(x = summaryDataSet, file = "dataset.txt", row.name=FALSE)
+##write.table(x = summaryDataSet, file = "dataset.txt", row.name=FALSE)
 
