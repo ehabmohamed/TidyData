@@ -59,3 +59,6 @@ summaryDataSet <- dataSet %>% group_by(activity, subject) %>% summarise_each(fun
 summaryDataSet <- data.frame(summaryDataSet)
 
 summaryDataSet[1:35,1:5]
+
+write.table(x = summaryDataSet, file = "dataset.txt", row.name=FALSE)
+
