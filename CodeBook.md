@@ -1,9 +1,4 @@
----
-title: "CodeBook"
-author: "Ehab Mohamed"
-date: "14 August 2015"
-output: html_document
----
+# CodeBook
 
 This CodeBook describes the different variables in the dataset.
 

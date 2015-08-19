@@ -1,9 +1,5 @@
----
-title: "Human Activity Recognition Analysis using R"
-author: "Ehab Mohamed"
-date: "14 August 2015"
-output: html_document
----
+# Human Activity Recognition Analysis using R
+
 This guide explains the different code parts in the **run_analusis.R** script.
 
 ## Using the dplyr library
